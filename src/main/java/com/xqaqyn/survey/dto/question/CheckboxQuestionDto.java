@@ -8,6 +8,7 @@ import java.util.List;
 public class CheckboxQuestionDto extends BaseQuestionDto{
     // general
     private Boolean showCommentArea;
+    private String commentText;
     private String commentPlaceholder;
     private List<String> choices;
 }
