@@ -1,5 +1,6 @@
 package com.xqaqyn.survey.dto;
 
+import com.xqaqyn.survey.dto.question.BaseQuestionDto;
 import lombok.Data;
 
 import java.util.List;
@@ -8,6 +9,6 @@ import java.util.List;
 public class PageDto {
     private String name;
     private String description;
-    private List<QuestionDto> elements;
+    private List<BaseQuestionDto> elements;
     private Boolean readOnly;
 }

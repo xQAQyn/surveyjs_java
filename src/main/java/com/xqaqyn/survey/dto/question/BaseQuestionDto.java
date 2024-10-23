@@ -1,21 +1,19 @@
-package com.xqaqyn.survey.dto;
+package com.xqaqyn.survey.dto.question;
 
+import com.xqaqyn.survey.dto.QuestionValidatorDto;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class QuestionDto {
+public class BaseQuestionDto {
     // general info
     private String name;
     private String title;
     private String description;
-    private String type;
+    private Boolean visible;
     private Boolean isRequired;
     private Boolean readOnly;
-    private String placeholder;
-    private List<String> dataList;
-    private String autocomplete;
 
     // logic
     private String visibleIf;
