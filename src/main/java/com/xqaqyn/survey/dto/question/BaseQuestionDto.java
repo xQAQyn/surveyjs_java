@@ -1,12 +1,15 @@
 package com.xqaqyn.survey.dto.question;
 
-import com.xqaqyn.survey.dto.QuestionValidatorDto;
+import com.xqaqyn.survey.dto.question.field.QuestionValidatorDto;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
 public class BaseQuestionDto {
+    // auto generated field
+    private String id;
+
     // general info
     private String name;
     private String title;
@@ -15,7 +18,7 @@ public class BaseQuestionDto {
     private Boolean isRequired;
     private Boolean readOnly;
 
-    // logic
+    // condition
     private String visibleIf;
     private String enableIf;
     private String resetValueIf;
@@ -35,7 +38,6 @@ public class BaseQuestionDto {
     private String width;
     private String minWidth;
     private String maxWidth;
-    private Integer size;
 
     // data
     private String defaultValue;
@@ -43,7 +45,10 @@ public class BaseQuestionDto {
     private Boolean useDisplayValuesInDynamicTexts;
     private String clearIfInvisible;
     private String textUpdateMode;
+
+    // validators
     private List<QuestionValidatorDto> validators;
+    private String requiredErrorText;
 
     // other
     private String readonlyRenderAs;
