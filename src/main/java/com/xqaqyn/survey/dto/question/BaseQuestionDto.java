@@ -40,11 +40,11 @@ public class BaseQuestionDto {
     private String maxWidth;
 
     // data
+    private String valueName;
     private String defaultValue;
     private String correctAnswer;
     private Boolean useDisplayValuesInDynamicTexts;
     private String clearIfInvisible;
-    private String textUpdateMode;
 
     // validators
     private List<QuestionValidatorDto> validators;

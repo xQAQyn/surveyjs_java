@@ -22,4 +22,7 @@ public class FileQuestionDto extends BaseQuestionDto{
     private String filePlaceholder;
     private String photoPlaceholder;
     private String fileOrPhotoPlaceholder;
+
+    // data
+    private String valueName;
 }

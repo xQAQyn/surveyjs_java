@@ -36,9 +36,4 @@ public class RatioGroupQuestionDto extends BaseQuestionDto {
     private String choicesEnableIf;
 
     // data
-    private String valueName;
-    private String defaultValue;
-    private String correctAnswer;
-    private String clearIfInvisible;
-    private Boolean useDisplayValuesInDynamicTexts;
 }

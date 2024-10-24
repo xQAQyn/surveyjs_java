@@ -14,4 +14,8 @@ public class BooleanQuestionDto extends BaseQuestionDto{
     private String labelTrue;
     private String labelFalse;
     private Boolean swapOrder;
+
+    // data
+    private String valueTrue;
+    private String valueFalse;
 }

@@ -1,6 +1,9 @@
 package com.xqaqyn.survey.dto.question;
 
+import com.xqaqyn.survey.dto.question.field.ImageDto;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 public class ImagePickerQuestionDto extends BaseQuestionDto{
@@ -15,4 +18,14 @@ public class ImagePickerQuestionDto extends BaseQuestionDto{
     private Integer imageWidth;
     private Boolean multiSelect;
     private Boolean showLabel;
+
+    // choice options
+    private List<ImageDto> choices;
+    private String choicesFromQuestion;
+    private String choicesOrder;
+
+    // condition
+    private Boolean hideIfChoicesEmpty;
+    private String choicesVisibleIf;
+    private String choicesEnableIf;
 }

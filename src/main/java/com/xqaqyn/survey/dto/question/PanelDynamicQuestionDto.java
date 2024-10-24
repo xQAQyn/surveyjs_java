@@ -26,4 +26,24 @@ public class PanelDynamicQuestionDto extends BaseQuestionDto{
     private String panelNextText;
     private String showQuestionNumbers;
     private Boolean showRangeInProgress;
+
+    // question settings
+    private String templateTitleLocation;
+    private String templateErrorLocation;
+
+    // layout
+    private String newPanelPosition;
+    private String panelRemoveButtonLocation;
+
+    // condition
+//    private Object bindings;
+    private String templateVisibleIf;
+
+    // data
+    private Boolean defaultValueFromLastPanel;
+
+    // validator
+    private String keyName;
+    private String keyDuplicationError;
+
 }
